@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+env/
+
+# VS Code settings (optional, if you use VS Code)
+.vscode/
+
+# macOS, Linux, Windows system files
+.DS_Store
+Thumbs.db
+
+# Logs and database files
+*.log
+*.sqlite3
+
+# Jupyter runtime files
+*.pid
+*.json
+*.csv
+*.tsv
+*.db
+
+# Output files from notebooks
+*.out
+*.bak
+
+# Notebook metadata and temporary files
+*.nbconvert.ipynb
+*.nb.html
+
+# Python virtual environment folders
+*.egg-info/
+dist/
+build/
+
+# Large files or data sets (optional - adjust as needed)
+data/
+*.h5
+*.hdf5
+*.npy
+*.npz
