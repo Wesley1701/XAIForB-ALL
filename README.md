@@ -1,20 +1,17 @@
 # Capstone Project Group 3
 
-## Virtual Environment:
-### If using anaconda / miniconda:
-- `conda create -n *env_name* python=3.11`
-- `conda activate *env_name*`
-- `pip install -r requirements.txt`
+## Dev Container:
+### Requirements:
+[Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-### If using venv:
-#### Windows:
-- `python -m venv venv`
-- `venv\Scripts\activate`
-- `pip instal -r requirements.txt`
-
-#### MacOS / Linux:
-- `python3 -m venv venv`
-- `source venv/bin/activate`
-- `pip install -r requirements.txt`
-
-*Note: run `pip install --upgrade pip` before installing requirements.txt. Not needed but recommended*
+### Quick Start:
+- Clone repo :)
+```git clone https://github.com/Wesley1701/XAIForB-ALL.git
+cd XAIForB-All
+```
+- Open Project in VS Code
+- Reopen in Dev Container
+  - Press `F1` (or `Cmd+Shift+P` / `Ctrl+Shift+P`)
+  - Type `Dev Containers: Reopen in Container`
+  - Wait while VS Code builds the container (first time only - Can take a few minutes)
+- Your now inside the dev container, extensions are installed inside the container so you probably miss some of your personal extensions
