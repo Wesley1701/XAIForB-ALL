@@ -6,7 +6,8 @@
 
 ### Quick Start:
 - Clone repo :)
-```git clone https://github.com/Wesley1701/XAIForB-ALL.git
+```
+git clone https://github.com/Wesley1701/XAIForB-ALL.git
 cd XAIForB-All
 ```
 - Open Project in VS Code
