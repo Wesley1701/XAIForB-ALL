@@ -51,3 +51,5 @@
 # *.hdf5
 # *.npy
 # *.npz
+
+data/

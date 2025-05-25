@@ -138,3 +138,5 @@ webencodings==0.5.1
 websocket-client==1.8.0
 widgetsnbextension==4.0.14
 xgboost==3.0.1
+mygene==3.2.2
+biothings-client==0.4.1
