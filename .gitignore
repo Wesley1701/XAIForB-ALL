@@ -18,7 +18,7 @@
 # .vscode/
 
 # # macOS, Linux, Windows system files
-# .DS_Store
+.DS_Store
 # Thumbs.db
 
 # # Logs and database files
