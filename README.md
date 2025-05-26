@@ -15,4 +15,4 @@ cd XAIForB-All
   - Press `F1` (or `Cmd+Shift+P` / `Ctrl+Shift+P`)
   - Type `Dev Containers: Reopen in Container`
   - Wait while VS Code builds the container (first time only - Can take a few minutes)
-- Your now inside the dev container, extensions are installed inside the container so you probably miss some of your personal extensions
+  - You're now inside the dev container, extensions are installed inside the container so you probably miss some of your personal extensions
