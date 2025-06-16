@@ -85,6 +85,7 @@ notebook==7.4.2
 notebook_shim==0.2.4
 numba==0.61.2
 numpy==2.2.6
+nvidia-nccl-cu12==2.27.3
 optuna==4.3.0
 overrides==7.7.0
 packaging==25.0
@@ -100,6 +101,7 @@ prompt_toolkit==3.0.51
 psutil==7.0.0
 ptyprocess==0.7.0
 pure_eval==0.2.3
+pyarrow==20.0.0
 pycparser==2.22
 pydeseq2==0.5.1
 Pygments==2.19.1
