@@ -1,0 +1,30 @@
+FROM mcr.microsoft.com/devcontainers/python:3.12-bookworm
+
+RUN wget https://developer.download.nvidia.com/compute/cuda/12.9.1/local_installers/cuda-repo-debian12-12-9-local_12.9.1-575.57.08-1_amd64.deb
+RUN dpkg -i cuda-repo-debian12-12-9-local_12.9.1-575.57.08-1_amd64.deb
+RUN cp /var/cuda-repo-debian12-12-9-local/cuda-*-keyring.gpg /usr/share/keyrings/
+RUN apt-get update
+RUN apt-get -y install cuda-toolkit-12-9
+
+# RUN curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+#   && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+#     sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+#     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+# ARG NVIDIA_CONTAINER_TOOLKIT_VERSION=1.17.8-1
+
+# RUN apt-get update && \
+#     apt-get install -y --no-install-recommends \
+#     nvidia-container-toolkit=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
+#     nvidia-container-toolkit-base=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
+#     libnvidia-container-tools=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
+#     libnvidia-container1=${NVIDIA_CONTAINER_TOOLKIT_VERSION}
+
+RUN pip install \
+  --extra-index-url=https://pypi.nvidia.com \
+  cudf-cu12==25.6.* \
+  dask-cudf-cu12==25.6.* \
+  cuml-cu12==25.6.* \
+  cugraph-cu12==25.6.*
+
+# RUN nvidia-ctk runtime configure --runtime=docker
