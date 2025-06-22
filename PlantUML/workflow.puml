@@ -6,15 +6,14 @@ partition "Data Preparation" {
     :Data Collection;
 
     fork
-        :GDC Healthy Dataset;
+        :GDC B-ALL Dataset;
     fork again
-        :GDC Unhealthy Dataset;
+        :GDC ALL Dataset;
     end fork
 
     :Merge Datasets;
     :Train-Test Split;
     :Data Preprocessing;
-    :Feature Selection;
 }
 
 partition "Hyperparameter Tuning" {
