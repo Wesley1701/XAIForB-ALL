@@ -1,0 +1,51 @@
+@startuml Workflow
+
+start
+
+partition "Data Preparation" {
+    :Data Collection;
+
+    fork
+        :GDC Healthy Dataset;
+    fork again
+        :GDC Unhealthy Dataset;
+    end fork
+
+    :Merge Datasets;
+    :Train-Test Split;
+    :Data Preprocessing;
+    :Feature Selection;
+}
+
+partition "Hyperparameter Tuning" {
+    :Optuna;
+    :Stratisfied K-Fold Cross-Validation;
+    :SelectKBest;
+    :Feature Selection;
+}
+
+partition "Model Development" {
+    fork
+        :Train XGBoost;
+        :Evaluate XGBoost;
+    fork again
+        :Train Random Forest;
+        :Evaluate Random Forest;
+    fork again
+        :Train Logistic Regression;
+        :Evaluate Logistic Regression;
+    end fork
+
+    :Compare Models;
+    :Select Best Model;
+}
+
+partition "Explainability Analysis" {
+    :Apply SHAP to Model;
+
+    :Generate Visualization Artifacts;
+}
+
+stop
+
+@enduml
