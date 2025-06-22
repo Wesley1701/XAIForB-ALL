@@ -1,9 +1,9 @@
 # Capstone Project Group 3
-Boy Stroo (1061576)
-Niels Poldervaart (1006334)
-Quinn Rachman (1009001)
-Rick van Alphen (1006306)
-Wesley Zwaal (1026606)
+- Boy Stroo (1061576)
+- Niels Poldervaart (1006334)
+- Quinn Rachman (1009001)
+- Rick van Alphen (1006306)
+- Wesley Zwaal (1026606)
 
 ## Dev Container:
 ### Requirements:
