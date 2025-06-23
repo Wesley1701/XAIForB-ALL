@@ -1,10 +1,15 @@
 optuna
 scikit-learn
 matplotlib
+optuna
+scikit-learn
+matplotlib
 seaborn
 pandas
 numpy
+shap
 imblearn
 xgboost
 nbstripout
-ipython
+pyarrow
+jupyterlab
