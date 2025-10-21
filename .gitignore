@@ -1,10 +1,10 @@
-# # Byte-compiled / optimized / DLL files
-# __pycache__/
+# Byte-compiled / optimized / DLL files
+__pycache__/
 # *.py[cod]
 # *.so
 
-# # Jupyter Notebook checkpoints
-# .ipynb_checkpoints/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
 # # Environment files
 # .env
@@ -45,11 +45,10 @@
 # dist/
 # build/
 
-# # Large files or data sets (optional - adjust as needed)
-# data/
+# Large files or data sets (optional - adjust as needed)
+data/
+.idea/
 # *.h5
 # *.hdf5
 # *.npy
 # *.npz
-
-data/
