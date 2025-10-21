@@ -14,8 +14,8 @@ __pycache__/
 # env.bak/
 # env/
 
-# # VS Code settings (optional, if you use VS Code)
-# .vscode/
+# VS Code settings (optional, if you use VS Code)
+.vscode/
 
 # # macOS, Linux, Windows system files
 .DS_Store
