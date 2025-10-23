@@ -11,3 +11,4 @@ nbstripout
 pyarrow
 jupyterlab
 openpyxl
+mygene
