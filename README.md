@@ -6,11 +6,11 @@
 - Wesley Zwaal (1026606)
 
 ## Dev Container:
-### Requirements:
+### Requirements (Docker + Devcontainer):
 [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ### Quick Start:
-- Clone repo :)
+- Clone repo
 ```
 git clone https://github.com/Wesley1701/XAIForB-ALL.git
 cd XAIForB-All
@@ -23,29 +23,15 @@ cd XAIForB-All
   - You're now inside the dev container, extensions are installed inside the container so you probably miss some of your personal extensions
 
 ## Download Datasets
-- Download ALL Dataset:
-  - Run `download_gdc_files.py` by using this command: `python3 download_gdc_files.py ./REQUIRED/acute_variants_leukemia_manifest.txt ./data/GDC/downloads --workers 6`
-
-- Download B-ALL Dataset:
-  - Run `download_gdc_files.py` by using this command: `python3 download_gdc_files.py ./REQUIRED/common_precursor_b_all_manifest.txt ./data/GDC/downloads --workers 6`
+- Download Breast Cancer Dataset (Project: TCGA-BRCA):
+  - Run `download_gdc_files.py` by using this command: `python3 download_gdc_files.py ./REQUIRED/manifest.txt ./data/tsv`
 
 > [!CAUTION]
 > Might need to run the download commands again if there are missing files.
 
 ## Combine GDC files into dataset
-### Covnert ALL .tsv files to .pq file
-- Open `gdc_to_qp.ipynb`
-- In first code block:
-  - Change `METADATA_FILE` to `./data/REQUIRED/acute_variants_leukemia_metadata.json`
-  - Change `OUTPUT_FILE` to `./data/ALL.pq`
-- Run All code blocks
-- Wait until code finishes
-
-### Covnert ALL .tsv files to .pq file
-- Open `gdc_to_qp.ipynb`
-- In first code block:
-  - Change `METADATA_FILE` to `./data/REQUIRED/common_precursor_b_all_metadata.json`
-  - Change `OUTPUT_FILE` to `./data/B_ALL.pq`
+### Convert ALL .tsv files to .pq file
+- Open `gdc_to_pq.ipynb`
 - Run All code blocks
 - Wait until code finishes
 

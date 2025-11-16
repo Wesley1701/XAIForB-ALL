@@ -1,10 +1,10 @@
- # Byte-compiled / optimized / DLL files
- __pycache__/
- *.py[cod]
- *.so
+# Byte-compiled / optimized / DLL files
+__pycache__/
+# *.py[cod]
+# *.so
 
- # Jupyter Notebook checkpoints
- .ipynb_checkpoints/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
  # Environment files
  .env
@@ -14,8 +14,8 @@
  env.bak/
  env/
 
- # VS Code settings (optional, if you use VS Code)
- .vscode/
+# VS Code settings (optional, if you use VS Code)
+.vscode/
 
  # macOS, Linux, Windows system files
 .DS_Store
@@ -45,11 +45,10 @@
  dist/
  build/
 
- # Large files or data sets (optional - adjust as needed)
- data/
- *.h5
- *.hdf5
- *.npy
- *.npz
-
+# Large files or data sets (optional - adjust as needed)
 data/
+.idea/
+# *.h5
+# *.hdf5
+# *.npy
+# *.npz
